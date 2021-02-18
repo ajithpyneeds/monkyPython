@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monkey Python</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="landingPage">
+    <header>
+      <a href="#" class="title">MonkyPython</a>
+      <a href="mailto:" class="mail content-desktop">info@monkypython.com</a>
+      <div class="hamburger content-mobile">
+        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+          <path
+                class="line top"
+                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+          <path
+                class="line middle"
+                d="m 70,50 h -40" />
+          <path
+                class="line bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+      </div>
+    </header>
+    <div class="landingContent">
+      <div class="basicForm">
+        <h4>$ pip getting ready!</h4>
+        <h6>Excited to learn Python Web Frameworks like FastAPI, Flask, Django and Pyramid ?</h6>
+        <form action="">
+          <input type="text" maxlength="20" placeholder="E-Mail Id">
+          <button type="submit">Get Notified!</button>
+        </form>
+        <div class="apps">
+          <div class="appStores content-desktop">
+            <img src="/images/btn-google-play.png" alt="">
+          </div>
+          <div class="appStores content-desktop">
+            <img src="/images/btn-app-store.png" alt="">
+          </div>
+          <p class="getItOn content-mobile">Get it On</p>
+          <div class="appContainer content-mobile">
+            <div class="appStores">
+              <img src="https://img.icons8.com/ios-filled/50/000000/google-play.png"/>          
+            </div>
+            <div class="appStores">
+              <img src="https://img.icons8.com/ios-filled/50/000000/apple-app-store--v2.png"/>          
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="bannerImg">
+          <img src="/images/Copy of LogowithText-2.png" alt="logo">
+        </div>
+        <a class="mobNum content-desktop" href="tel:">+91 9108 399 222</a>
+      </div>
+    </div>
+    <div class="hamContent content-mobile" style="display: none;">
+      <a href="mailto:" class="mail">info@monkypython.com</a>
+      <a class="mobNum" href="tel:">+91 9108 399 222</a>
+      <div>
+        <p>Want to Connect ?</p>
+        <form action="">
+          <input type="text" maxlength="20" placeholder="E-Mail Id">
+          <button type="submit">Get Notified!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.hamburger').click(function() {
+        $('.hamContent').toggle();
+      });
+    });
+  </script>
+</html>
